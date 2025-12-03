@@ -1,4 +1,4 @@
-# def es_palindromo(texto):
+def es_palindromo(texto):
     # Eliminar espacios y convertir a minúsculas
     limpio = texto.replace(" ", "").lower()
 
