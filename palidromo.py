@@ -1,18 +1,16 @@
-# practica1.py
+# def es_palindromo(texto):
+    # Eliminar espacios y convertir a minúsculas
+    limpio = texto.replace(" ", "").lower()
 
-# 1. Captura de datos con input()
-nombre = input("Ingresa tu nombre: ")
-edad = int(input("¿Cuantos años tienes?"))
-estudias = input("¿Si estudias? (True/False): ")
+    # Comparar con el texto invertido
+    return limpio == limpio[::-1]
 
 
-# 2. Conversión de tipos
-nombre = int(nombre)
-edad = int(edad)
-estudias = estudias == "True"  # Convierte a booleano
+# Pedir texto al usuario
+entrada = input("Ingresa un texto: ")
 
-# 3. Mostrar los datos capturados
-print("\n--- Datos Capturados ---")
-print("Nombre completo:", nombre)
-print("Edad:", edad)
-print("¿Que carrera estudia?:", estudias)
+# Llamar a la función y mostrar resultado
+if es_palindromo(entrada):
+    print("Es un palíndromo.")
+else:
+    print("No es un palíndromo.")
